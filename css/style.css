@@ -1277,7 +1277,6 @@ body {
 
 .hamburger {
   position: fixed;
-  background: #3f95ea;
   left: 20px;
   top: 20px;
   cursor: pointer;
@@ -1285,7 +1284,7 @@ body {
 }
 .hamburger i {
   font-size: 25px;
-  color: white;
+  color: #52d3aa ;
 }
 
 .nav-offcanvas {
