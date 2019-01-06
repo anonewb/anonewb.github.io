@@ -281,8 +281,8 @@ h1, h2, h3, h4, h5, h6, figure {
 #ano-work,
 #ano-blog,
 #ano-pricing,
-#ano-contact {
-  padding: 7em 0;
+#ano-consult {
+  padding: 6em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -934,7 +934,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #ano-footer {
-  padding: 50px 0;
+  padding: 20px 0;
   width: 100%;
   background: repeating-linear-gradient(to bottom right, #3f95ea 0%, #52d3aa 100%);
   color: #fff;
@@ -972,7 +972,8 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-box-shadow: none;
   box-shadow: none;
   border: none;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-left: 2px solid rgba(63, 149, 234, .5);
+  outline: none;
   font-size: 18px;
   font-weight: 300;
   -webkit-border-radius: 4px;
@@ -982,7 +983,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .form-control:focus, .form-control:active {
   box-shadow: none;
-  border: 2px solid rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(63, 149, 234, .5);
+  outline: none;
 }
 
 input[type="text"] {
@@ -990,19 +992,11 @@ input[type="text"] {
 }
 
 .form-group {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-#map {
-  width: 100%;
-  height: 500px;
-  position: relative;
-}
-@media screen and (max-width: 768px) {
-  #map {
-    height: 200px;
-  }
-}
+
+
 
 .gototop {
   position: fixed;
@@ -1211,7 +1205,7 @@ input[type="text"] {
 .form-control {
   box-shadow: none;
   background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-left: 4px solid rgba(63, 149, 234, 1); 
   height: 54px;
   font-size: 18px;
   font-weight: 300;
@@ -1359,3 +1353,11 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
+
+
+
+
+
+
+
