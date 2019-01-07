@@ -43,7 +43,7 @@ body {
 }
 
 a {
-  color: #3F95EA;
+  color: #001e85;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #ano-features .feature-left {
   margin-bottom: 40px;
-  float: left;
+  /* float: left; */
 }
 @media screen and (max-width: 992px) {
   #ano-features .feature-left {
@@ -296,7 +296,7 @@ h1, h2, h3, h4, h5, h6, figure {
   #ano-blog,
   #ano-pricing,
   #ano-contact {
-    padding: 3em 0;
+    padding: 3em 15px;
   }
 }
 
@@ -363,12 +363,12 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #3F95EA;
+  color: #001e85;
   padding-left: 10px;
   padding-right: 10px;
 }
 .ano-social-icons li a i {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 #ano-about .ano-social-icons {
@@ -415,10 +415,11 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 1.5;
   color: #000;
 }
+
 .ano-heading p {
   font-size: 18px;
   line-height: 1.5;
-  color: #828282;
+  color: #591d1d;
 }
 .ano-heading span {
   display: block;
@@ -744,7 +745,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .work .desc span {
   display: block;
-  color: #999999;
+  color: #121213;
   font-size: 14px;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
@@ -989,8 +990,9 @@ h1, h2, h3, h4, h5, h6, figure {
   outline: none;
 }
 
-input[type="text"] {
+input[type="text"], input[type="tel"], input[type="email"], textarea {
   height: 50px;
+  margin: 20px;
 }
 
 .form-group {
@@ -1072,7 +1074,8 @@ input[type="text"] {
 
 .btn-primary {
   background: #3F95EA;
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
   border: 2px solid #3F95EA;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -1207,7 +1210,7 @@ input[type="text"] {
 .form-control {
   box-shadow: none;
   background: transparent;
-  border-left: 4px solid rgba(63, 149, 234, 1); 
+  border-left: 4px solid rgba(1, 31, 133, 1); 
   height: 54px;
   font-size: 18px;
   font-weight: 300;
@@ -1359,7 +1362,52 @@ body {
 
 
 
+#blue-color1, #blue-color2, #blue-color3 {
+  color: #001e85;
+}
 
 
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    #909;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color:    #909;
+ opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color:    #909;
+ opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color:    #909;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+ color:    #909;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+ color:    #909;
+}
 
 
+@media screen and (max-width: 768px) {
+
+  .col-padding {
+    padding: 6px !important;
+    margin: 10px !important;
+  }
+}
+
+
+@media screen and (min-width: 940px) {
+
+  #ano-footer {
+    height: 100vh;
+  }
+
+  .ano-social-icons {
+    margin-top: 100px;
+  }
+
+
+}
