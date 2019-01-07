@@ -47,7 +47,7 @@ if (empty($_POST["message"])) {
 
 
 $EmailTo = "anonewbe@gmail.com";
-$Subject = "Msg from portfolio website";
+$subject = "Msg from portfolio website";
 
 // prepare email body text
 $Body = "";
@@ -76,7 +76,7 @@ $Body .= $message;
 $Body .= "\n";
 
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$success = mail($EmailTo, $subject, $message, "From:".$email);
 
 // redirect to success page
 if ($success && $errorMSG == ""){
@@ -84,8 +84,12 @@ if ($success && $errorMSG == ""){
 }else{
     if($errorMSG == ""){
         echo "Something went wrong :(";
+        error_reporting(-1);
+        ini_set('display_errors', 'On');
     } else {
         echo $errorMSG;
+        error_reporting(-1);
+        ini_set('display_errors', 'On');
     }
 }
 
