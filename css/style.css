@@ -60,7 +60,8 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Space Mono", Arial, serif;
+  /* font-family: "Space Mono", Arial, serif; */
+  font-family: 'Bree Serif', serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -120,6 +121,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #ano-header .display-tc h1,
 .ano-cover .display-tc h1 {
   font-family: "Kaushan Script", cursive;
+  /* font-family: 'Bree Serif', serif; */
   margin-bottom: 30px;
   font-size: 50px;
   line-height: 1.3;

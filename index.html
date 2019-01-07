@@ -12,6 +12,8 @@
 
 	<!-- <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -67,7 +69,7 @@
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
 							<div class="profile-thumb" style="background: url(images/user-3.jpg);"></div>
 							<h1><span>AnoNewb</span></h1>
-							<h3><span>JS Web Developer &amp; Freelancer</span></h3>
+							<h2><span>JS Web Developer &amp; Freelancer</span></h2>
 							
 							<p>
 								
@@ -619,32 +621,32 @@
 							</div>
 						</div> -->
 
-						<form action="#">
+						<form class="shake" role="form" method="post" action="form.php" id="contactForm" name="contact-form" data-toggle="validator">
 
 								<div class="row form-group">
 									<div class="col-md-4 text-center animate-box">
-										<input type="text" id="name" class="form-control" placeholder="Name">
+										<input type="text" id="name" class="form-control" placeholder="Name" name="name" required>
 									</div>
 									<div class="col-md-4 text-center animate-box">
-											<input type="tel" id="number" class="form-control" placeholder="Phone no">
+											<input type="tel" id="phoneno" class="form-control" placeholder="Phone no" name="phoneno" required>
 									</div>
 									<div class="col-md-4 text-center animate-box">
-										<input type="email" id="email" class="form-control" placeholder="Email">
+										<input type="email" id="email" class="form-control" placeholder="Email" name="email" required>
 									</div>
 								</div>
 				
 								<div class="row form-group">	
 										<div class="col-md-6 text-center animate-box">
-												<input type="text" id="cname" class="form-control" placeholder="Company's name">
+												<input type="text" id="cname" class="form-control" placeholder="Company's name" name="cname" required>
 										</div>
 										<div class="col-md-6 text-center animate-box">
-											<input type="text" id="subject" class="form-control" placeholder="Subject">
+											<input type="text" id="subject" class="form-control" placeholder="Subject" name="subject" required>
 										</div>
 									</div>
 				
 								<div class="row form-group">
 									<div class="col-md-12 text-center animate-box">
-										<textarea name="message" id="message" cols="30" rows="2" class="form-control" placeholder="Your Message..."></textarea>
+										<textarea name="message" id="message" cols="30" rows="2" class="form-control" placeholder="Your Message..." name="message" required></textarea>
 									</div>
 								</div>
 				
@@ -673,7 +675,7 @@
 						</div>
 						<div class="col-md-4 text-center col-padding animate-box">
 							<i></i>
-							<h3>call/msg me at</h3>
+							<h3>Contact me at</h3>
 							<span>+91 9999999999</span>
 						</div>
 						<div class="col-md-4 text-center col-padding animate-box">
@@ -688,7 +690,7 @@
 
 						<div class="col-md-12 text-center col-padding animate-box">
 							<i></i>
-							<h3>Checkout</h3>
+							<!-- <h3>Checkout</h3> -->
 							<p>
 									<ul class="ano-social-icons">
 											<li><a href="#"><i class="fab fa-twitter"></i></a></li>
